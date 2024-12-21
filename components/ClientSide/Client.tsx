@@ -43,8 +43,9 @@ export default function Client() {
         <>
             <div>
                 {loading ? (
-                    <div className='flex justify-center items-center mt-40'>
+                    <div className='flex flex-col gap-4 justify-center items-center mt-40'>
                         <Image src={"/loading-bg.gif"} alt='Loading' width={120} height={120} ></Image>
+                        <h1 className='text-[30px] text-gray-500 ml-3'>Loading....</h1>
                     </div>
                 ) : (
                     <div>
